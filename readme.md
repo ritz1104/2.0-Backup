@@ -52,3 +52,31 @@ Form Handling
 - React Hook Form
 - useRef()
 
+
+
+Routing
+ek page se dusre page pe jana 
+
+declarative and Data routing
+
+BrowserRouter
+- Histroy APi kas use karta hai routing karne aur mainly use
+ hota hai broswer me routing karne ke liye
+ client side pe
+
+ home : '/'
+ about : /about'
+
+ hashRouter
+ hidden route
+ home : /#/
+
+Data Routing
+-- Data le aao fir apna UI render karo
+
+
+
+axios
+
+
+ 
