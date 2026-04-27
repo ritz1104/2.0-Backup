@@ -80,3 +80,8 @@ axios
 
 
  
+Context API
+
+step 1. Context ko create karna
+step 2. Context Provide karna
+step 3. Context ka use karna 
