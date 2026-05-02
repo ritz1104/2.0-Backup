@@ -85,3 +85,17 @@ Context API
 step 1. Context ko create karna
 step 2. Context Provide karna
 step 3. Context ka use karna 
+
+
+
+why we need redux toolkit
+
+
+
+Redux
+ ├── Store- store ek esi jagah jaha pe humara data rakha hota hai globally
+ ├── Slice - features
+ ├── Reducer - functions logc 
+ ├── Action - 
+ ├── Dispatch - action triger karte
+ └── Selector - data ko select karne ke liye

@@ -1,19 +1,27 @@
 import { api } from "../config/api";
 
-export const gamesLoader = async ()=>{
- try {
-        const res = await api.get('/games',{
-        params:{
-            key:'ec81cd95eecd4503b6a93d6001c82694'
-        }
-    })
 
-    return res
- } catch (error) {
-    console.log(error.message)
- }
+const API_KEY = import.meta.env.VITE_API_KEY
+
+export const gamesLoader = async ({request}) => {
+
+const url = new URL(request.url)
+    console.log(url)
+
+  const search = url.searchParams.get('search') || "" 
+
+  const params={
+    key:API_KEY,
+  
+  }
+    if(search){
+      params.search=search
+    }
+
+const res =await api.get('/games',{params})
+
+  return res.data
 }
-
 
 export const gameDeatilsLoader = async ({params})=>{
 try {
@@ -21,7 +29,7 @@ try {
       
   const res = await api.get(`/games/${params.id}`,{
     params:{
-        key:'ec81cd95eecd4503b6a93d6001c82694'
+        key:API_KEY
     }
   })
 
