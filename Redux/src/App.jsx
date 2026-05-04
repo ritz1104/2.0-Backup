@@ -22,14 +22,14 @@ const App = () => {
    }
 
    const incrementByuserInput=()=>{
-     dispatch(incrementValueByUserInput(16))
+     dispatch(incrementValueByUserInput(12))   
    }
   return (
     <div>
         <h1>Counter - {data}</h1>
         <button onClick={handleIncrement}>Increment By 1</button>
         <button onClick={handleDecrement}>Decrement By 1</button>
-           <button onClick={incrementByuserInput()}>By user Input </button>
+           <button onClick={incrementByuserInput}>By user Input </button>
     </div>
   )
 }
